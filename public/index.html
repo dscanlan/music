@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="musicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Angular lib -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- Create some padding for body -->
+    <style>
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+      }
+    </style>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/controllers/login.js"></script>
+    <script src="../javascript/controllers/signup.js"></script>
+    <script src="../javascript/controllers/main.js"></script>
+    <script src="../javascript/controllers/kick_drum.js"></script>
+    <script src="../javascript/controllers/rock_male.js"></script>
+    <script src="../javascript/controllers/vocal_compressor.js"></script>
+    <script src="../javascript/services/services.js"></script>
+    
+  </head>
+
+  <body>
+    
+    <!-- Dynamically render templates -->
+    <div class="container" ui-view>
+    </div>
+  </body>
+</html>

@@ -6,9 +6,12 @@ db = require('./db');
 config = require('./config'),
 server = require('./server')
 presetRouter = require('./routes/presets'),
+publicRouter = require('./routes/public'),
 cors = require('cors'),
+path = require('path'),
 morgan = require('morgan');
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 //app.use(morgan('combined'));
 app.use(bodyParser.json({type: '*/*'}));
@@ -21,7 +24,7 @@ app.use(function(err, req, res, next){ // logic
     next();
 });
 presetRouter(app);
-
+publicRouter(app);
 
 
 

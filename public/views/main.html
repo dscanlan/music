@@ -1,0 +1,45 @@
+<div>
+        <button class="btn btn-danger pull-right" ng-click="vm.logout()">Logout</button> 
+        <h3>Presets</h3>
+        <div ng-if="vm.err.length > 0" class="alert alert-danger">
+                <strong>OOPS!</strong> {{vm.err}}
+        </div>
+        <ul class="list-group">
+                <li class="list-group-item" style="height: 55px">
+                        <div class="col-md-4">
+                                <span>Rock Male</span>
+                        </div>
+                        <div class="col-md-4">
+                                <button class="btn btn-primary" ng-click="vm.linkRock()">{{vm.presets.rockMale!== null ? 'EDIT': 'CREATE'}}</button>
+                        </div>
+
+                        <div ng-show="vm.presets.rockMale!== null" class="col-md-4">
+                                <button class="btn btn-danger" ng-click="vm.deleteRock()">Delete</button>
+                        </div>
+                </li>
+                <li class="list-group-item" style="height: 55px">
+                        <div class="col-md-4">
+                                <span>Vocal Compressor</span>
+                        </div>
+                        <div class="col-md-4">
+                                <button class="btn btn-primary" ng-click="vm.linkVocal()">{{vm.presets.vocalCompressor!== null ? 'EDIT': 'CREATE'}}</button>
+                        </div>
+
+                        <div ng-show="vm.presets.vocalCompressor!== null" class="col-md-4">
+                                <button class="btn btn-danger" ng-click="vm.deleteVocal()">Delete</button>
+                        </div>
+                </li>
+                <li class="list-group-item" style="height: 55px">
+                        <div class="col-md-4">
+                                <span>Kick Drum</span>
+                        </div>
+                        <div class="col-md-4">
+                                <button class="btn btn-primary" ng-click="vm.linkKick()">{{vm.presets.kickDrum!== null ? 'EDIT': 'CREATE'}}</button>
+                        </div>
+
+                        <div ng-show="vm.presets.kickDrum!== null" class="col-md-4">
+                                <button class="btn btn-danger" ng-click="vm.deleteKick()">Delete</button>
+                        </div>
+                </li>
+        </ul>
+</div>

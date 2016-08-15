@@ -1,0 +1,109 @@
+<form >
+    <h3>Create a New Rock Male Preset</h3>
+    <div ng-if="vm.err.length > 0" class="alert alert-danger">
+            <strong>OOPS!</strong> {{vm.err}}
+    </div>
+     <div >
+        <label>Low band</label><br/>
+        <label>
+        <input type="radio" ng-model="vm.preset.lowBand" ng-value="true">
+            On
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.lowBand" ng-value="false">
+            Off
+        </label><br/>
+    </div>
+    <div >
+        <label>Low peak/shelf</label>
+        <input ng-model="vm.preset.lowPeak" type="text" class = "form-control" />
+    </div>
+    <div >
+        <label>Low freq (Hz)</label>
+        <input ng-model="vm.preset.lowFreq" type="number" class = "form-control" />
+    </div>
+     <div >
+        <label>Low gain</label>
+        <input ng-model="vm.preset.lowGain" type="number" class = "form-control" />
+    </div>
+    <!-- -->
+     <div >
+        <label>Low/Mid band</label><br/>
+        <label>
+        <input type="radio" ng-model="vm.preset.lowMidBand" ng-value="true">
+            On
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.lowMidBand" ng-value="false">
+            Off
+        </label><br/>
+    </div>
+     <div >
+        <label>Low/Mid Hi/Low Q</label><br/>
+        <label>
+        <input type="radio" ng-model="vm.preset.lowMidHiLowQ" value="Hi">
+            Hi
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.lowMidHiLowQ" value="Med">
+            Med
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.lowMidHiLowQ" value="Low">
+            Low
+        </label><br/>
+    </div>
+    <div >
+        <label>Low/Mid freq (Hz)</label>
+         <input ng-model="vm.preset.lowMidFreq"  type="number" class = "form-control" />
+    </div>
+    <div >
+        <label>Low/mid gain</label>
+         <input ng-model="vm.preset.lowMiGain" type="number" class = "form-control" />
+    </div>
+    <div >
+        <label>Hi/Mid band</label><br/>
+        <label>
+        <input type="radio" ng-model="vm.preset.hiMidBand" ng-value="true">
+            On
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.hiMidBand" ng-value="false">
+            Off
+        </label><br/>
+    </div>
+    <div >
+        <label>Hi/Mid freq (kHz)</label>
+        <input ng-model="vm.preset.hiMidFreq" type="number" class = "form-control" />
+    </div>
+    <div >
+        <label>Hi/Mid gain</label>
+        <input ng-model="vm.preset.hiMidGain" type="number" class = "form-control" />
+    </div>
+    <div >
+        <label>Hi band</label><br/>
+        <label>
+        <input type="radio" ng-model="vm.preset.hiBand" ng-value="true">
+            On
+        </label><br/>
+        <label>
+            <input type="radio" ng-model="vm.preset.hiBand" ng-value="false">
+            Off
+        </label><br/>
+    </div>
+    <div >
+        <label>Hi peak/shelf</label>
+        <input ng-model="vm.preset.hiPeak" type="text" class = "form-control" />
+    </div>
+    <div >
+        <label>Hi freq (kHz)</label>
+        <input ng-model="vm.preset.hiFreq" type="number" class = "form-control" />
+    </div>
+    <div >
+        <label>Hi gain</label>
+        <input ng-model="vm.preset.hiGain" type="number" class = "form-control" />
+    </div>
+    <br/>
+    <button type="button" ng-click="vm.submit()" class="btn btn-primary">Submit</button>
+    <button type="button" ng-click="vm.cancel()" class="btn btn-danger pull-right">Cancel</button>
+</form>

@@ -1,0 +1,24 @@
+{
+  "name": "music",
+  "authors": [
+    "Dominic Scanlan <dominicscanlan@hotmail.com>"
+  ],
+  "description": "music",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.5.8",
+    "bootstrap": "~3.3.7",
+    "ngstorage": "ng-storage#~0.4.2",
+    "angular-ui-router": "ui-router#~0.3.1"
+  }
+}
