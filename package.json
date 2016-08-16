@@ -4,17 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "start": "node app.js"
   },
   "author": "dscanlan",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
     "cors": "^2.7.1",
     "express": "^4.14.0",
     "http": "0.0.0",
     "jwt-simple": "^0.5.0",
+    "mocha": "^3.0.2",
     "mongoose": "^4.5.8",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
